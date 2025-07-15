@@ -10,15 +10,15 @@ Input: nums = [-2,0,-1]
 Output: 0
 Explanation: The result cannot be 2, because [-2,-1] is not a subarray.
 */
-class DSA2 {
+class DSA1 {
     public int maxSubArray(int[] nums) {
         int n = nums.length;
         int max = Integer.MIN_VALUE;
 
         for(int i=0;i<n;i++){
-            int sum = 0;
+            int sum = 1;
             for(int j=i;j<n;j++){
-                sum = sum + nums[j];
+                sum = sum * nums[j];
                 max = Math.max(max,sum);
             }
 
@@ -26,7 +26,7 @@ class DSA2 {
         return max;
     }
     public static void main (String args[]){
-        int [] nums = { -2, 1, -3, 4, -1, 2, 1, -5, 4};
+        int [] nums = { -2, 1, -3, 4, -1, 2, 1, -5, -4};
         DSA1 obj = new DSA1();
        int maximum = obj.maxSubArray(nums);
        System.out.println("maximum is " + maximum );
