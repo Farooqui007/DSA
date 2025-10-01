@@ -26,7 +26,7 @@ class DSA1 {
         return max;
     }
     public static void main (String args[]){
-        int [] nums = { -2, 1, -3, 4, -1, 2, 1, -5, -4};
+        int [] nums = { -2, 1, -3, 4, -1, 1, -5, -4};
         DSA1 obj = new DSA1();
        int maximum = obj.maxSubArray(nums);
        System.out.println("maximum is " + maximum );
