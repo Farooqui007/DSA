@@ -105,7 +105,7 @@ public class PlusOne {
                         // Check if result matches expected
                         String actualStr = Arrays.toString(testResult);
                         if(actualStr.equals(expected[i])) {
-                            System.out.println (2" ✅ PASS");
+                            System.out.println (" ✅ PASS");
                         } else {
                             System.out.println(" ❌ FAIL");
                         }
